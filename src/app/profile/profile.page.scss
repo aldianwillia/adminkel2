@@ -1,0 +1,115 @@
+    ion-content {
+        --background: linear-gradient( to right, #4ed5ca, #8699e6);
+    }
+    
+    .content_div {
+        width: 100%;
+        margin-top: 5px;
+        padding-top: 2px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        ion-grid {
+            padding: 0px;
+        }
+        ion-button {
+            margin-top: 25px;
+        }
+        .bio {
+            background-color: rgba(255, 255, 255, 0.793);
+            width: 100%;
+            align-items: center;
+            margin-top: 20px;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            border: 4px solid #5e7ccc;
+            box-shadow: 5px 15px 15px rgb(0, 0, 0);
+            table {
+                width: 100%;
+            }
+            .item {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+            ion-label {
+                color: black;
+            }
+            ion-input {
+                color: black;
+                margin-top: 5px;
+                border: 2px solid #5e7ccc;
+            }
+        }
+        .col_div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100px;
+            padding-bottom: 10px;
+            img {
+                width: 70px;
+                border: 5px solid #ffffff;
+            }
+        }
+        .foto-user {
+            width: 100%;
+            img {
+                width: 90px;
+            }
+            ion-button {
+                padding-left: 5px;
+            }
+        }
+    }
+    
+    .animated {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    
+    @-webkit-keyframes bounceInUp {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(2000px);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: translateY(-10px);
+        }
+        80% {
+            opacity: 1;
+            -webkit-transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+    }
+    
+    .bounceInUp {
+        -webkit-animation-name: bounceInUp;
+        animation-name: bounceInUp;
+    }
+    
+    @keyframes bounceInUp {
+        0% {
+            opacity: 0;
+            -webkit-transform: translateY(2000px);
+        }
+        60% {
+            opacity: 1;
+            -webkit-transform: translateY(-10px);
+        }
+        80% {
+            opacity: 1;
+            -webkit-transform: translateY(10px);
+        }
+        100% {
+            opacity: 1;
+            -webkit-transform: translateY(0);
+        }
+    }

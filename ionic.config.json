@@ -1,0 +1,8 @@
+{
+  "name": "adm_kel",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

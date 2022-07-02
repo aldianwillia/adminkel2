@@ -1,0 +1,97 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Pelayanan Surat Nikah</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menuId="main-menu"></ion-menu-button>
+        </ion-buttons>
+        <ion-back-button text="" slot="end"></ion-back-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <app-layanan></app-layanan>
+        <!-- <ion-card> -->
+        <div class="content_div">
+            <ion-grid fixed>
+                <form [formGroup]="formsuratnikah">
+                    <div>
+                        <ion-label position="floating">NIK Calon</ion-label>
+                        <ion-input type="text" formControlName="nik_calon"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">NIK Orang Tua Laki-Laki</ion-label>
+                        <ion-input type="text" formControlName="nik_ortulaki"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">NIK Orang Tua Perempuan</ion-label>
+                        <ion-input type="text" formControlName="nik_ortupere"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">NIK Pasangan</ion-label>
+                        <ion-input type="text" formControlName="nik_pasangan"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Suku Calon</ion-label>
+                        <ion-input type="text" formControlName="suku_calon"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Suku Pasangan</ion-label>
+                        <ion-input type="text" formControlName="suku_pasangan"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Nama Mamak</ion-label>
+                        <ion-input type="text" formControlName="nama_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Tempat Lahir Mamak</ion-label>
+                        <ion-input type="text" formControlName="tmplahir_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="stacked">Tanggal Lahir Mamak</ion-label>
+                        <ion-input type="date" formControlName="tgllahir_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Negeri Asal Mamak</ion-label>
+                        <ion-input type="text" formControlName="negeriasal_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Bangsa Mamak</ion-label>
+                        <ion-input type="text" formControlName="bangsa_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Pekerjaan Mamak</ion-label>
+                        <ion-input type="text" formControlName="kerja_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Alamat Mamak</ion-label>
+                        <ion-input type="text" formControlName="alamat_mamak"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Perkawinan Ke (Format Angka)</ion-label>
+                        <ion-input type="text" formControlName="kawin_ke"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="stacked">Tanggal Pernikahan</ion-label>
+                        <ion-input type="date" formControlName="tgl_nikah"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="stacked">Jam Pernikahan</ion-label>
+                        <ion-input type="time" formControlName="jam_nikah"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Tempat Nikah</ion-label>
+                        <ion-input type="text" formControlName="tempat_nikah"></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Mahar Nikah</ion-label>
+                        <ion-input type="text" formControlName="mahar_nikah"></ion-input>
+                    </div>
+
+                    <ion-button (click)="submitsuratnikah()">Menyimpan</ion-button>
+
+                </form>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

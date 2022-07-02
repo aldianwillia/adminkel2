@@ -1,0 +1,76 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Profile</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menuId="main-menu"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <div class="content_div ">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <div class="col_div">
+                        <img src="../assets/logobkt.png">
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <div class="foto-user">
+                    <ion-row>
+                        <img src="../assets/Profile.jpg">
+                        <ion-button (click)="openModal()">Edit Foto</ion-button>
+                        <ion-button>Hapus</ion-button>
+                    </ion-row>
+                </div>
+            </ion-row>
+            <ion-row>
+                <div class="bio animated bounceInUp">
+                    <form [formGroup]="FormDataUser">
+                        <div class="item">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <ion-label position="stacked">NIK : </ion-label>
+                                    </td>
+                                    <td>
+                                        <ion-input type="text" readonly="true" formControlName="nik" required></ion-input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ion-label position="stacked">Nama :</ion-label>
+                                    </td>
+                                    <td>
+                                        <ion-input type="text" formControlName="name" value="{{ user.name }}" required></ion-input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ion-label position="stacked">E-mail :</ion-label>
+                                    </td>
+                                    <td>
+                                        <ion-input type="text" readonly="true" formControlName="email" value="{{ user.email }}" required></ion-input>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <ion-label position="stacked">Desa/Kelurahan :</ion-label>
+                                    </td>
+                                    <td>
+                                        <ion-input type="text" readonly="true" formControlName="id_kel_desa" value="{{ user.id_kel_desa }}" required></ion-input>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <ion-button type="submit" color="primary" size="full">Update</ion-button>
+                    </form>
+                </div>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+</ion-content>

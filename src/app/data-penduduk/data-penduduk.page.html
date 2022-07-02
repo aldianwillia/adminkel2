@@ -1,0 +1,141 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>data-penduduk</ion-title>
+        <ion-back-button text="" slot="start"></ion-back-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <form [formGroup]="FormPenduduk">
+        <ion-item>
+            <ion-label position="stacked">NIK</ion-label>
+            <ion-input type="text" formControlName="nik" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">KK</ion-label>
+            <ion-input type="text" formControlName="kk" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Nama</ion-label>
+            <ion-input type="text" formControlName="nama" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">Tempat Lahir</ion-label>
+            <ion-input type="text" formControlName="tmp_lahir" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="stacked">tanggal Lahir</ion-label>
+            <ion-input type="date" formControlName="tgl_lahir" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Jenis Kelamin</ion-label>
+            <ion-select formControlName="jenkel" required>
+                <ion-select-option value='L'>laki-laki</ion-select-option>
+                <ion-select-option value='P'>Perempuan</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Golongan Darah</ion-label>
+            <ion-select formControlName="goldar" required>
+                <ion-select-option value='A'>A</ion-select-option>
+                <ion-select-option value='B'>B</ion-select-option>
+                <ion-select-option value='AB'>AB</ion-select-option>
+                <ion-select-option value='O'>O</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Agama</ion-label>
+            <ion-select formControlName="agama" required>
+                <ion-select-option value='Islam'>Islam</ion-select-option>
+                <ion-select-option value='Protestan'>Protestan</ion-select-option>
+                <ion-select-option value='Khatolik'>Khatolik</ion-select-option>
+                <ion-select-option value='Hindu'>Hindu</ion-select-option>
+                <ion-select-option value='Budha'>Budha</ion-select-option>
+                <ion-select-option value='TiongHua'>TiongHua</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Status Hubungan Keluarga</ion-label>
+            <ion-select formControlName="stat_hbkel" required>
+                <ion-select-option value='Orang tua laki-laki'>Orang tua laki-laki</ion-select-option>
+                <ion-select-option value='Orang tua Perempuan'>Orang tua Perempuan</ion-select-option>
+                <ion-select-option value='Anak kandung Laki-laki'>Anak kandung Laki-lak</ion-select-option>
+                <ion-select-option value='Anak kandung Perempuan'>Anak kandung Perempuan</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Status Kawin</ion-label>
+            <ion-select formControlName="status_kawin" required>
+                <ion-select-option value='Sudah'>Sudah</ion-select-option>
+                <ion-select-option value='Belum'>Belum</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Pendidikan</ion-label>
+            <ion-select formControlName="pendidikan" required>
+                <ion-select-option value='SD'>SD</ion-select-option>
+                <ion-select-option value='SMP/Sederajat'>SMP/Sederajat</ion-select-option>
+                <ion-select-option value='SMA/Sederajat'>SMA/Sederajat</ion-select-option>
+                <ion-select-option value='D3'>D3</ion-select-option>
+                <ion-select-option value='S1/D4'>S1/D4</ion-select-option>
+                <ion-select-option value='S2'>S2</ion-select-option>
+                <ion-select-option value='S3'>S3</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Pekerjaan</ion-label>
+            <ion-input type="text" formControlName="pekerjaan" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Nama Ibu</ion-label>
+            <ion-input type="text" formControlName="nama_ibu" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Nama Ayah</ion-label>
+            <ion-input type="text" formControlName="nama_ayah" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Alamat</ion-label>
+            <ion-input type="text" formControlName="alamat" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">RT</ion-label>
+            <ion-input type="text" formControlName="rt" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">RW</ion-label>
+            <ion-input type="text" formControlName="rw" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Kelurahan</ion-label>
+            <ion-input type="text" formControlName="kelurahan" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Kecamatan</ion-label>
+            <ion-input type="text" formControlName="kecamatan" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Kabupaten/Kota</ion-label>
+            <ion-input type="text" formControlName="kotakab" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Provinsi</ion-label>
+            <ion-input type="text" placeholder="" formControlName="propinsi" required></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Status Pendidikan</ion-label>
+            <ion-select formControlName="status_pend" required>
+                <ion-select-option value='Sudah lulus'>Sudah Lulus</ion-select-option>
+                <ion-select-option value='Belum lulus'>Belum Lulus</ion-select-option>
+            </ion-select>
+        </ion-item>
+        <ion-row>
+            <ion-col>
+                <!-- <ion-button shape="round">Menyimpan</ion-button> -->
+            </ion-col>
+            <ion-col>
+                <ion-button (click)="submitPenduduk()">Menyimpan</ion-button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Silahkan Login Akun</ion-card-subtitle>
+            <h2>Pelayanan Kelurahan</h2>
+            <img src="/assets/logobkt.png" alt="">
+        </ion-card-header>
+
+        <ion-card-content>
+            <form (ngSubmit)="submitLogin()" [formGroup]="user">
+                <ion-list>
+                    <ion-item>
+                        <ion-label position="stacked">Email</ion-label>
+                        <ion-input type="text" formControlName="email"></ion-input>
+                    </ion-item>
+                    <ion-item>
+                        <ion-label position="stacked">Password</ion-label>
+                        <ion-input type="Password" placeholder="Masukan Password" formControlName="password"></ion-input>
+                    </ion-item>
+                </ion-list>
+                <ion-button type="submit" color="primary" size="full">Login</ion-button>
+                <p class="register-info" routerLink="/register">Belum punya Akun?</p>
+            </form>
+        </ion-card-content>
+    </ion-card>
+</ion-content>

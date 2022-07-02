@@ -1,0 +1,47 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Pelayanan Surat Umum</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button menuId="main-menu"></ion-menu-button>
+        </ion-buttons>
+        <ion-back-button text="" slot="end"></ion-back-button>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main_content_div">
+        <app-layanan></app-layanan>
+
+        <div class="content_div animated bounceInUp">
+            <ion-grid fixed>
+                <form [formGroup]="FormSuratUmum">
+                    <div class="item">
+                        <ion-label position="stacked">NIK</ion-label>
+                        <ion-input type="text" readonly="true" formControlName="nik" required></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Jenis Surat</ion-label>
+                        <ion-select formControlName="kode_surat" required>
+                            <ion-select-option *ngFor="let sur of jsurat" value="{{ sur.kode_surat }}">{{ sur.uraian }}</ion-select-option>
+                        </ion-select>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Alasan</ion-label>
+                        <ion-input type="text" formControlName="alasan" required></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Tujuan</ion-label>
+                        <ion-input type="text" formControlName="tujuan" required></ion-input>
+                    </div>
+                    <div>
+                        <ion-label position="floating">Tanggal Surat</ion-label>
+                        <ion-input type="date" placeholder="" formControlName="tanggal_surat" required></ion-input>
+                    </div>
+
+                    <ion-button (click)="submitsurat()">Kirim</ion-button>
+
+                </form>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

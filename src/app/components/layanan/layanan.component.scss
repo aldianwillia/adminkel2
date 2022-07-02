@@ -1,0 +1,26 @@
+.content_div {
+    ion-grid {
+        padding: 0px;
+    }
+    ion-row {
+        padding-top: 10px;
+        justify-content: center;
+        ion-label {
+            color: yellow;
+        }
+    }
+    .col_div {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        box-shadow: 5px 15px 15px rgb(0, 0, 0);
+        img {
+            width: 50px;
+            align-items: center;
+        }
+    }
+}

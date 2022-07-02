@@ -1,0 +1,16 @@
+<div class="content_div">
+    <ion-grid>
+        <ion-row>
+            <ion-col *ngFor="let item of subjects">
+                <ion-row>
+                    <div class="col_div" (click)="directPage(item.link)">
+                        <img src="{{ item.img }}" widh="100%">
+                    </div>
+                </ion-row>
+                <ion-row>
+                    <ion-label>{{ item.name }}</ion-label>
+                </ion-row>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</div>

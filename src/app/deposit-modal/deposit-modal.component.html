@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Modal Ubah Gambar</ion-title>
+        <ion-buttons slot="end">
+            <ion-button (click)="closeModal()">Close</ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="no-scroll">
+    <ion-list>
+        <ion-label floating>Profile Picture</ion-label>
+    </ion-list>
+    <ion-list>
+        <img src="../assets/Profile.jpg">
+    </ion-list>
+    <ion-list>
+        <ion-input type="file" [id]="pic"></ion-input>
+    </ion-list>
+
+
+    <ion-button (click)='fotoprofile();'>Upload</ion-button>
+
+
+</ion-content>

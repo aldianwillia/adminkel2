@@ -1,0 +1,91 @@
+ion-content {
+    width: 100%;
+    --background: linear-gradient( to right, #4ed5ca, #8699e6);
+}
+
+ion-card {
+    background: #ffffff;
+    margin-top: 30%;
+    margin-right: 12px;
+    border: 7px solid #5e7ccc;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 5px 15px 15px rgb(0, 0, 0);
+    ion-card-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        img {
+            width: 120px;
+            height: 150px;
+        }
+        h2 {
+            font-size: 20px;
+            color: #158fd1;
+            letter-spacing: 0.4px;
+        }
+    }
+}
+
+ion-list {
+    background: #ffffff;
+    ion-item {
+        margin-top: 2px;
+        border: 5px solid #5e7ccc;
+        .register-info {
+            font-size: 14px;
+            color: blue;
+        }
+    }
+}
+
+.animated {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(-10px);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+}
+
+@keyframes bounceInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(-10px);
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
